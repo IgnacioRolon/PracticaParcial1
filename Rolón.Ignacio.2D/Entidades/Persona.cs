@@ -47,6 +47,10 @@ namespace Entidades
             this.edad = edad;
             this.dni = dni;
         }
+        /// <summary>
+        /// Muestra toda la información de la persona. Puede ser sobrescrita. 
+        /// </summary>
+        /// <returns>Devuelve un string con la informacion de la persona.</returns>
         public virtual string Mostrar()
         {
             StringBuilder str = new StringBuilder();

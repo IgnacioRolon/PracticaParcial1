@@ -54,6 +54,11 @@ namespace Entidades
             str.AppendFormat("{0}, Peso: {1}, Altura: {2}, Posicion: {3}", base.Mostrar(), this.peso.ToString(), this.altura.ToString(), this.posicion.ToString());
             return str.ToString();
         }
+
+        /// <summary>
+        /// Valida el estado fisico de un jugador. Su IMC debe ser mayor a 18.5 y menor a 25.
+        /// </summary>
+        /// <returns>Devuelve si está en estado fisico.</returns>
         public bool ValidarEstadoFisico()
         {
             float IMC = 0;
@@ -64,6 +69,11 @@ namespace Entidades
             }
             return false;
         }
+
+        /// <summary>
+        /// Valida si el jugador es apto. Debe estar en estado fisico y tener menos de 40 años.
+        /// </summary>
+        /// <returns>Devuelve si el jugador es apto.</returns>
         public override bool ValidarAptitud()
         {
             if(this.Edad <= 40 && ValidarEstadoFisico() == true)

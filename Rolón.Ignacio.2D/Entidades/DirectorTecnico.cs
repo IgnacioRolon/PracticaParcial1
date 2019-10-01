@@ -31,6 +31,11 @@ namespace Entidades
             str.AppendFormat("{0}, Años de Experiencia: {1}", base.Mostrar(), this.añosExperiencia);
             return str.ToString();
         }
+
+        /// <summary>
+        /// Un director tecnico es apto si tiene menos de 65 años y 2 o mas años de experiencia
+        /// </summary>
+        /// <returns>Devuelve si es apto.</returns>
         public override bool ValidarAptitud()
         {
             if(this.Edad < 65 && this.añosExperiencia >= 2)

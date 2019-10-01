@@ -13,6 +13,9 @@ namespace Entidades
         private List<Jugador> jugadores;
         private string nombre;
 
+        /// <summary>
+        /// El director tecnico se define solo si es apto.
+        /// </summary>
         public DirectorTecnico DirectorTecnico
         {
             set
@@ -39,6 +42,11 @@ namespace Entidades
         {
             this.nombre = nombre;
         }
+
+        /// <summary>
+        /// Devuelve el DT del equipo y sus jugadores.
+        /// </summary>
+        /// <param name="e">Equipo a castear.</param>
         public static explicit operator string(Equipo e)
         {
             StringBuilder str = new StringBuilder();
@@ -72,6 +80,13 @@ namespace Entidades
         {
             return !(e == j);
         }
+
+        /// <summary>
+        /// Se agrega un jugador al equipo solo si hay espacio en el equipo, no existe en el mismo y el jugador es apto.
+        /// </summary>
+        /// <param name="e">Equipo a agregar el jugador</param>
+        /// <param name="j">Jugador a agregar</param>
+        /// <returns>Equipo modificado.</returns>
         public static Equipo operator +(Equipo e, Jugador j)
         {
             if(e.jugadores.Count <= cantidadMaximaJugadores && j.ValidarAptitud() == true)
@@ -87,6 +102,13 @@ namespace Entidades
             }
             return e;
         }
+
+        /// <summary>
+        /// Valida el equipo. Es valido si tiene 1 arquero, si tiene director tecnico, 
+        /// si tiene la cantidad maxima de jugadores y si tiene 1 de cada posicion.
+        /// </summary>
+        /// <param name="e">Equipo a validar</param>
+        /// <returns>Devuelve si el equipo es valido.</returns>
         public static bool ValidarEquipo(Equipo e)
         {
             int cantidadArqueros = 0;
