@@ -1,0 +1,10 @@
+C:\Users\alumno\Desktop\Rolón.Ignacio.2D\VistaConsola\bin\Debug\VistaConsola.exe.config
+C:\Users\alumno\Desktop\Rolón.Ignacio.2D\VistaConsola\bin\Debug\VistaConsola.exe
+C:\Users\alumno\Desktop\Rolón.Ignacio.2D\VistaConsola\bin\Debug\VistaConsola.pdb
+C:\Users\alumno\Desktop\Rolón.Ignacio.2D\VistaConsola\bin\Debug\Entidades.dll
+C:\Users\alumno\Desktop\Rolón.Ignacio.2D\VistaConsola\bin\Debug\Entidades.pdb
+C:\Users\alumno\Desktop\Rolón.Ignacio.2D\VistaConsola\obj\Debug\VistaConsola.csprojAssemblyReference.cache
+C:\Users\alumno\Desktop\Rolón.Ignacio.2D\VistaConsola\obj\Debug\VistaConsola.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Desktop\Rolón.Ignacio.2D\VistaConsola\obj\Debug\VistaConsola.csproj.CopyComplete
+C:\Users\alumno\Desktop\Rolón.Ignacio.2D\VistaConsola\obj\Debug\VistaConsola.exe
+C:\Users\alumno\Desktop\Rolón.Ignacio.2D\VistaConsola\obj\Debug\VistaConsola.pdb
