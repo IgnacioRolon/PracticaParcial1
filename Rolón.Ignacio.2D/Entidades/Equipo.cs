@@ -30,7 +30,7 @@ namespace Entidades
                 return this.nombre;
             }
         }
-        public Equipo()
+        private Equipo()
         {
             this.jugadores = new List<Jugador>();
         }
