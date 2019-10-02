@@ -89,7 +89,7 @@ namespace Entidades
         /// <returns>Equipo modificado.</returns>
         public static Equipo operator +(Equipo e, Jugador j)
         {
-            if(e.jugadores.Count <= cantidadMaximaJugadores && j.ValidarAptitud() == true)
+            if(e.jugadores.Count < cantidadMaximaJugadores && j.ValidarAptitud() == true)
             {
                 foreach(Jugador jugador in e.jugadores)
                 {
